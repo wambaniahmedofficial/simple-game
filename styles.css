@@ -1,0 +1,168 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #1e1e1e;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 70px;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, #002b36, #073642);
+    color: white;
+    max-width: 90%;
+    width: 500px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.settings {
+    margin-bottom: 20px;
+    background-color: #073642;
+}
+
+.settings label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.settings input, .settings select, .settings button {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff0066;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.settings button:hover {
+    background-color: #268bd2;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 35px;
+    background-color: lightblue;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.extended-button {
+    display: none;
+}
+
+button:hover {
+    background-color: #ff4d94;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.scoreboard {
+    margin-top: 20px;
+}
+
+#displayResults {
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #008ecc;
+}
+
+.progress {
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background-color: #4caf50;
+}
+
+.hidden {
+    display: none;
+}
+
+#end-game-summary {
+    margin-top: 30px;
+    background-color: #ff0066;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 95px;
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 30px;
+    }
+
+    .scoreboard {
+        font-size: 18px;
+    }
+
+    #reset {
+        font-size: 14px;
+    }
+}
